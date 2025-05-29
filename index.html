@@ -1,0 +1,83 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>#QA Test Page</title>
+
+ <script>
+window.addEventListener("onUcImprintClick", function(e){
+  console.log("Custom Imprint Link Clicked!!")
+});
+ </script>
+
+ <script>
+window.addEventListener("onUcPrivacyClick", function(e) {
+  console.log("Insert here your logic for Privacy Policy")
+})
+ </script>
+
+<script src="https://app.usercentrics-develop.eu/pr/697/loader.js" id="usercentrics-cmp" data-settings-id="k9u3jMNqjkODB1" data-dialog-mode=1 data-tcf-enabled data-avoid-prefetch-services></script>
+
+  
+
+
+  This test page should verify that different functionalities of our CMP are working.
+
+  <h1> Vimeo </h1>
+  <p> This is an embedding from Vimeo</p>
+  <iframe src="https://player.vimeo.com/video/744979938?h=e4e0289444&app_id=122963" id="vimeo" width="426" height="240" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Produktvideo"></iframe>
+  
+  <h1> Airtable </h1>
+  <p> This is an embedding from Airtable</p>
+  <iframe class="airtable-embed" src="https://airtable.com/embed/shr1JTAfJbR8eS3cc?backgroundColor=blue" id="airtable" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  
+  <h1> YouTube Embedding </h1>
+  <p>The page should refresh, once the Technology is accepted.</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lUB_bo0SsRw?si=19m572U8UXKS5JF7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+   <h1> Spotify Embedding </h1>
+   <div id="spotify-embed" style="width: 300px; height: 380px;">
+        <iframe src="https://open.spotify.com/embed/show/5OTm5evU4sWv5BmZLz6Yt5?utm_source=generator"
+          data-uc-allowed="false"
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+        </iframe>
+    </div>
+    
+
+  
+  <h1> Twitter Embedding </h1>
+<blockquote class="twitter-tweet" id="twitter"><p lang="en" dir="ltr">At dawn from the gateway to Mars, the launch of Starship’s second flight test <a href="https://t.co/ffKnsVKwG4">pic.twitter.com/ffKnsVKwG4</a></p>&mdash; SpaceX (@SpaceX) <a href="https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw">December 7, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+  <h1> Google Maps Embedding </h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d42550.78176913606!2d11.6391936!3d48.198451199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sde!4v1627274483897!5m2!1sen!2sde" id="maps" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+  <h1> HubSpot Forms without iFrame </h1>
+  <p>The page should reload, after consent was revoked.</p>
+ <div class="consent-content">
+            <div id="container" class="hbspt-container-593"></div>
+            <script id="testScript" charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+            <script>
+                hbspt.forms.create({
+                    portalId: 4852292,
+                    formId: "e147c0c5-bce8-443e-8292-cbac56ba0e64",
+                    css: "",
+                    target: ".hbspt-container-593"
+                });
+            </script>
+            <script>
+                hbspt.forms.create({
+                    region:"na1",
+                    portalId:"7458436",
+                    formId:"9cd442ab-1d93-4958-9c5c-65199a65e8bf"
+                });
+            </script>
+  </div>
+  <h1> reCAPTCHA V3 simulation </h1>
+  <p>This is just a picture, which should be unblocked, if reCAPTCHA V3 consent is given.</p>
+  <img src="https://developers.google.com/static/recaptcha/images/newCaptchaAnchor.gif" id="reCaptchaV3" width="560">
+  </body>
+</html>
